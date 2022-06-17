@@ -1,0 +1,1 @@
+$_mod.run("/marko-koa$1.0.0/components/mod-fasz/index.marko.register");
