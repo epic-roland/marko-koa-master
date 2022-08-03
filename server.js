@@ -5,7 +5,7 @@ require("marko/node-require").install();
 const createGzip = require("zlib").createGzip;
 
 const Koa = require("koa");
-const Router = require('@koa/router');
+const R = require("koa-router");
 const mount = require("koa-mount");
 
 const app = new Koa();
@@ -34,8 +34,8 @@ require("lasso").configure({
 
 app.use(mount("/static", serve(`${__dirname}/static`)));
 
-const router = new Router();
-const template = require("marko").load(require("./template.marko"));
+const router = new R();
+const template = require("marko").load(require("./index.marko"));
 
 router.get('/', (ctx, next) => {
 

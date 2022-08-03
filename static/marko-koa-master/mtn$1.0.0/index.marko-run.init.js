@@ -1,0 +1,1 @@
+$_mod.run("/mtn$1.0.0/index.marko.init");
