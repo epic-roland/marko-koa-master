@@ -44,6 +44,7 @@ router.get('/', (ctx, next) => {
 		name: "Frank",
 		count: 30,
 		colors: ["red", "green", "blue"],
+		tpl: ["1"]
 	});
 
 	ctx.vary("Accept-Encoding");

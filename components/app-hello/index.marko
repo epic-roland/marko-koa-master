@@ -1,4 +1,7 @@
 <div>
   <p>Hello ${data.name}</p>
   <button type="button" on-click("sendEmail")>Show map</button>
+  <for|template| of=input.templates>
+      <dynamic-component2 template=template />
+  </for>
 </div>

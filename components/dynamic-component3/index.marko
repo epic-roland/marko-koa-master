@@ -1,0 +1,16 @@
+class {
+  onCreate(input, out) {
+    this.state = {
+      importPromise: lassoLoader.async("../component-" + input.template + "/index.marko")
+    };
+  }
+}
+
+<await(state.importPromise)>
+  <@then|tpl|>
+    <${state.tpl}/>
+  </@then>
+  <@catch|err|>
+    <!-- Displays if promise rejects --> ${err.name} error: ${err.message}
+  </@catch>
+</await>

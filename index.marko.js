@@ -36,7 +36,8 @@ function render(input, out, __component, component, state) {
   out.w("</head><body>");
 
   app_hello_tag({
-      name: input.name
+      name: input.name,
+      templates: input.tpl
     }, out, __component, "8");
 
   out.w("<p>You have " +
