@@ -1,1 +1,0 @@
-$_mod.run("/marko-koa$1.0.0/components/app-hello/index.marko.register");
